@@ -7,7 +7,7 @@ import org.junit.Test;
  * 链式的双向队列
  */
 public class DoubleLinkedList {
-    public class Node{
+    private class Node{//    做一个结点内部类
         Object data;//  数据
         Node next;//    后继指针
         Node previous;//       前驱指针
@@ -20,7 +20,7 @@ public class DoubleLinkedList {
     /*
     peekHead
      */
-    public Object peekHead(){
+    private Object peekHead(){
         if(front!=null){
             return front.data;
         }
@@ -29,7 +29,7 @@ public class DoubleLinkedList {
     /*
     peekLast
      */
-    public Object peekLast(){
+    private Object peekLast(){
         if(rear!=null){
             return rear.data;
         }
@@ -38,7 +38,7 @@ public class DoubleLinkedList {
     /*
     队首插入
      */
-    public void insertHead(Object data){
+    private void insertHead(Object data){
         Node newNode=new Node(data);
         if(front==null){//  当队首为空时，第一次插入的新结点为尾结点
             rear=newNode;
@@ -51,7 +51,7 @@ public class DoubleLinkedList {
     /*
     队尾插入(与队首插入相反)
      */
-    public void insertLast(Object data){
+    private void insertLast(Object data){
         Node newNode=new Node(data);
         if(front==null){//      当队首为空时，第一次插入的新结点为首结点
             front=newNode;
@@ -64,7 +64,7 @@ public class DoubleLinkedList {
     /*
     队首删除
      */
-    public Object deleteHead(){
+    private Object deleteHead(){
         if(front==null) {
             return null;
         }
@@ -76,7 +76,7 @@ public class DoubleLinkedList {
     /*
     队尾删除(与队首删除相反)
      */
-    public Object deleteLast(){
+    private Object deleteLast(){
         if(front==null){
             return null;
         }
