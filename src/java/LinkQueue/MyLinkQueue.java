@@ -29,7 +29,6 @@ public class MyLinkQueue {
     /**
      * add
      * @param data 加入链式队列的数据
-     *
      */
     private void add(int data){
         Node newNode = new Node(data, null);
