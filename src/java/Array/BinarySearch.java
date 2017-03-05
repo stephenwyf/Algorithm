@@ -1,4 +1,6 @@
-import java.util.*;
+package Array;
+
+import java.util.Arrays;
 public class BinarySearch {//手写二分查找法
 	public static void main(String[] args) {
 		int[] a={10,9,8,7,6,5,4,3,2,1,0};
