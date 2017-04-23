@@ -1,4 +1,5 @@
-package Array;
+package Order;
+//快速排序
 
 public class QuickSort {
 	public static void main(String[] args) {
@@ -32,5 +33,4 @@ public class QuickSort {
 		Quicksort(start,f,a);// 将剩下的数组分成两组 分别进行快排    0--靶子前一位
 		Quicksort(l,end,a);// 靶子后一位--a.length
 	}
-
 }

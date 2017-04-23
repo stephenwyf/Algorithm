@@ -1,4 +1,4 @@
-package Array;
+package Order;
 
 import java.util.Arrays;
 public class BinarySearch {//手写二分查找法

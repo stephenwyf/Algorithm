@@ -26,6 +26,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="com.weikun" target="1.5" />
+      <module name="stephen" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
